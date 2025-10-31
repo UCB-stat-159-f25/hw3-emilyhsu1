@@ -1,27 +1,35 @@
 [build-system]
 
-requires = ["setuptools>=70", "wheel", "numpy>=1.23"]
+requires = ["setuptools>=70", "numpy>=2.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "ligotools"
 description = "LIGO utilities from the LOSC tutorial for Stat 159 HW3."
 readme = "README.md"
-requires-python = ">=3.8" #not 3.9 as per HW3 descriptions to match the environment.yml file
+
+requires-python = ">=3.9"
 
 authors = [
   { name = "LIGO Scientific Collaboration (LSC)" },
-  { name = "Emily Hsu" }  
+  { name = "Emily Hsu" },
+  { email = "emilyhsu1@berkeley.edu"}
 ]
 
 dependencies = [
-  "numpy==1.23",
-  "scipy==1.8",
-  "matplotlib==3.5",
-  "h5py==3.7",
-  "ipython==8.2",
-  "ipykernel==5.5",
-  "decorator==5.1"
+    "numpy==2.0",
+    "scipy==1.13",
+    "h5py==3.12",
+    "matplotlib==3.9",
+    "ipykernel==6.29"
+]
+
+license = "BSD-3-Clause"
+license-files = ["LICEN[CS]E*"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
 ]
 
 dynamic = ["version"]
