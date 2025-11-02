@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: ligotools
+Version: 0.1.0
+Summary: LIGO utilities from the LOSC tutorial for Stat 159 HW3.
+Author: LIGO Scientific Collaboration (LSC), Emily Hsu
+Author-email: emilyhsu1@berkeley.edu
+License-Expression: BSD-3-Clause
+Project-URL: Homepage, https://github.com/emilyhsu1/hw3-emilyhsu1
+Project-URL: Issues, https://github.com/emilyhsu1/hw3-emilyhsu1/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy==2.0
+Requires-Dist: scipy==1.13
+Requires-Dist: h5py==3.12
+Requires-Dist: matplotlib==3.9
+Requires-Dist: ipykernel==6.29
+
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/wOo27OxG)
