@@ -1,0 +1,16 @@
+For this assignment, I occasionally used ChatGPT for some clarification and debugging, mainly used to confirm syntax or workflow steps.
+The prompts I used below and the output are as follows:
+- Package setup:
+Prompt: “How should pyproject.toml specify dependencies for an installable package?”
+Output: “Include [build-system] with setuptools>=70, and match versions from environment.yml.”
+- Utils refactor:
+Prompt: “I moved whiten and reqshift to utils.py — what imports do I need?”
+Output: “Add import numpy as np and from scipy.io import wavfile.”
+- Testing:
+Prompt: “How can I test reqshift using pytest?”
+Output: “Create a 1 Hz sine wave and assert the frequency-shifted signal length matches input.”
+- MyST deployment:
+Prompt: “Why isn’t my GitHub Action building the MyST site?”
+Output: “Ensure you’ve enabled GitHub Pages with ‘GitHub Actions’ as the source.”
+
+Overall, all edits, testing, and notebook updates were performed by me, and ChatGPT use was limited to quick syntax checks and workflow confirmations. 
