@@ -52,18 +52,7 @@ def plotting_block(
     template_H1 = None
     template_L1 = None
 
-    
-    from pathlib import Path
-
-    DATA_DIR = Path("data")
-    FIG_DIR  = Path("figures")
-    AUD_DIR  = Path("audio")
-
     FIG_DIR.mkdir(exist_ok=True)
-    AUD_DIR.mkdir(exist_ok=True)
-
-    for d in (FIG_DIR, AUD_DIR, DATA_DIR):
-        d.mkdir(parents=True, exist_ok=True)
 
     # -- To calculate the PSD of the data, choose an overlap and a window (common to all detectors)
     #   that minimizes "spectral leakage" https://en.wikipedia.org/wiki/Spectral_leakage
