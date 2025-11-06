@@ -1,27 +1,35 @@
-# Byte-compiled / cache files
+# Python
 __pycache__/
 *.py[cod]
-*.pyo
+*.so
 
-# Jupyter checkpoints
+# Jupyter
 .ipynb_checkpoints/
+*.nbconvert.ipynb
+Untitled.ipynb
 
-# Environment and build folders
-.env-ready
-_build/
-_site/
-.venv/
+# Build & packaging
+build/
+dist/
 *.egg-info/
+.eggs/
+*.whl
 
-# Figures, audio, data outputs
-*.png
-*.jpg
-*.jpeg
-*.wav
-*.csv
+# MyST build
+_build/
 
-# Mac and system files
+# OS
 .DS_Store
 
-# Logs
-*.log
+# Local markers
+.env-ready
+
+# Generated figures/audio/outputs (keep inputs in data/)
+*.png
+*.wav
+*.mp3
+*.pdf
+*.csv
+
+# Keep canonical inputs
+!data/
