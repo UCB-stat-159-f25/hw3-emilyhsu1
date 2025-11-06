@@ -18,7 +18,7 @@ dist/
 Untitled*.ipynb
 
 # --------------------
-# MyST build
+# MyST build artifacts
 # --------------------
 _build/
 .env-ready
@@ -29,23 +29,20 @@ _build/
 .DS_Store
 
 # --------------------
-# Generated figures, audio, and outputs
+# Auto-generated notebook outputs
+# Only ignore files INSIDE these folders
 # --------------------
 figures/*
 audio/*
 !figures/.gitkeep
 !audio/.gitkeep
-*.png
-*.wav
-*.mp3
-*.pdf
 
 # --------------------
-# Data & inputs
+# Data (keep ALL inputs)
 # --------------------
 !data/
-data/*.json
-data/*.hdf5
+# Do NOT ignore .json or .hdf5 in data/
+# They are required for the notebook
 
 # --------------------
 # Temporary & misc
