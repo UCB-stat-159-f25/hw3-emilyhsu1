@@ -2,10 +2,10 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-f25/hw3-emilyhsu1/HEAD)
 
-# STAT 159 Homework 3 — LIGO Project
+# STAT 159 Homework 3 - Emily Hsu
 
-This repo contains my implementation of the LIGO matched-filtering pipeline,
-packaged into a Python module and documented with a MyST website.
+This repository has my implementation of the LOSC's LIGO matched-filtering pipeline,
+packaged into a Python module and documented with a MyST website! Launch the notebook in a live environment with the Binder badge.
 
 The project includes:
 - Installable `ligotools` package
