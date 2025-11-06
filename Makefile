@@ -41,7 +41,7 @@ help: Makefile
 .PHONY: env
 ## env                : Create or update the conda env from environment.yml (no activation)
 env: .env-ready
-	@echo "✓ Env up to date: $^"
+	@echo "Env up to date: $^"
 
 # -------------------------
 # HTML:
@@ -52,7 +52,7 @@ _build/html/index.html: myst.yml $(CONTENT) | .env-ready
 	@echo ">>> Building local MyST site because of changed deps:"
 	@echo "    $^"
 	myst build --html
-	@echo "✓ Built $@"
+	@echo "Built $@"
 
 .PHONY: html
 ## html               : Build a local HTML site (myst build --html)
@@ -67,4 +67,4 @@ html: _build/html/index.html
 clean:
 	@echo ">>> Cleaning generated artifacts..."
 	rm -rf figures audio _build .env-ready
-	@echo "✓ Clean complete."
+	@echo "Clean complete."
