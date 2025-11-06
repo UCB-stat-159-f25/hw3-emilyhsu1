@@ -6,6 +6,18 @@ from matplotlib import mlab
 from scipy.signal import windows, filtfilt
 from scipy.interpolate import interp1d
 
+from pathlib import Path
+
+DATA_DIR = Path("data")
+FIG_DIR  = Path("figures")
+AUD_DIR  = Path("audio")
+
+FIG_DIR.mkdir(exist_ok=True)
+AUD_DIR.mkdir(exist_ok=True)
+
+for d in (FIG_DIR, AUD_DIR, DATA_DIR):
+    d.mkdir(parents=True, exist_ok=True)
+    
 # function to whiten data
 def whiten(strain, interp_psd, dt):
     Nt = len(strain)
