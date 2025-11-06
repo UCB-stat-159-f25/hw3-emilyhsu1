@@ -1,35 +1,54 @@
-# Python
+# --------------------
+# Python cache & build
+# --------------------
 __pycache__/
 *.py[cod]
 *.so
-
-# Jupyter
-.ipynb_checkpoints/
-*.nbconvert.ipynb
-Untitled.ipynb
-
-# Build & packaging
 build/
 dist/
 *.egg-info/
 .eggs/
 *.whl
 
+# --------------------
+# Jupyter
+# --------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+Untitled*.ipynb
+
+# --------------------
 # MyST build
+# --------------------
 _build/
-
-# OS
-.DS_Store
-
-# Local markers
 .env-ready
 
-# Generated figures/audio/outputs (keep inputs in data/)
+# --------------------
+# OS files
+# --------------------
+.DS_Store
+
+# --------------------
+# Generated figures, audio, and outputs
+# --------------------
+figures/*
+audio/*
+!figures/.gitkeep
+!audio/.gitkeep
 *.png
 *.wav
 *.mp3
 *.pdf
-*.csv
 
-# Keep canonical inputs
+# --------------------
+# Data & inputs
+# --------------------
 !data/
+data/*.json
+data/*.hdf5
+
+# --------------------
+# Temporary & misc
+# --------------------
+*.log
+*.tmp
